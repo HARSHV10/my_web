@@ -6,8 +6,8 @@ const data=[
     sem: "3rd"
    },
    {
-    url:"CM(1).pdf",
-    title:"CM",
+    url:"dlcd.pdf",
+    title:"DLCD",
     sem:"3rd"
    }
 ]
