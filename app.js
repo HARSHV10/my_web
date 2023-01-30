@@ -15,6 +15,12 @@ const data=[
 
 }
 
+$("html").keypress(function(e){
+    if(e.originalEvent.key==='c'){
+        window.close();
+    }
+})
+
 var s=``;
 data.forEach(function(item,index){
     s+=`<a href='${item.url}'>
