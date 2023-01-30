@@ -23,7 +23,7 @@ $("html").keypress(function(e){
 
 var s=``;
 data.forEach(function(item,index){
-    s+=`<a href='${item.url} target="_blank" attribute'>
+    s+=`<a href=${item.url} target="_blank">
     <div class="into">
     <div class="car">
     <p class="text">${item.title + " "+ item.sem}</p>
