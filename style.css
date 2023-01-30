@@ -23,7 +23,7 @@ body{
     text-align: center;
     font-size: 50px;
     font-family: "orbitron";
-    color: aliceblue;
+    color: rgb(255, 0, 255);
 }
 .into{
     width: 100px;
@@ -37,7 +37,7 @@ body{
     display: inline-block;
     /* width: fit-content;
     height: fit-content; */
-    background-color: rgb(124, 45, 124);
+    background-color: rgb(255, 255, 255);
     border-radius: 10px;
 }
 .logo{
