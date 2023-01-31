@@ -1,0 +1,61 @@
+#include <iostream>
+#include <string.h>
+using namespace std;
+class string_class{
+    public:
+    char str[100];
+    string_class(){}
+    string_class(char str1[])
+    {
+        strcpy(str,str1);
+    }
+    void show();
+    void operator=(string_class s2);
+    void operator<=(string_class s2);
+    string_class operator+(string_class s2);
+};
+void string_class :: show(){
+cout<<str<<endl;
+}
+void string_class :: operator=(string_class s2){
+    strcpy(str,s2.str);
+}
+void string_class :: operator<=(string_class s2){
+    int length=strlen(str)-strlen(s2.str);
+    if(length<0)
+        cout<<"STRING 1 IS SMALLER\n";
+    else if(length==0)
+        cout<<"STRING 1 AND STRING 2 ARE EQUAL\n";
+    else if(length>0)
+        cout<<"STRING 1 IS BIGGER\n";
+}
+string_class string_class :: operator+(string_class s2)
+{
+    string_class s3;
+    strcat(str,s2.str);
+    strcpy(s3.str,str);
+    return s3;
+
+}
+int main()
+{   char str1[100],str2[100];
+    cout<<"ENTER STRING 1: ";
+    cin>>str1;
+    cout<<"ENTER STRING 2: ";
+    cin>>str2;
+    string_class s1(str1),s2(str2),s3;
+    cout<<"String 1: "<<str1<<endl;
+    cout<<"String 2: "<<str2<<endl;
+    cout<<"COMPARING LENGTHS OF BOTH STRINGS\n";
+    s1<=s2;
+    cout<<"CONCATENATED STRING:\n ";
+    s3=s1+s2;
+    s3.show();
+    cout<<"EQUATING BOTH STRINGS:"<<endl;
+    s1=s2;
+    cout<<"String 1: ";
+    s1.show();
+    cout<<"String 2: ";
+    s2.show();
+
+}

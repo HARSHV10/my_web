@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+class comp{
+    public:
+    int real;int img;
+    comp(){
+        real=0;img =0;
+    }
+    comp(int a,int b){
+        real=a,img=b;
+    }
+    comp operator+(comp c2){
+        comp c3;
+        c3.real=real+c2.real;
+        c3.img=img+c2.img;
+        return c3;
+    }
+};
+int main(){
+    comp c1(2,3);
+    comp c2(4,5);
+    comp c3;
+    c3 = c1+c2;
+    cout<<c3.real<<" "<<c3.img<<endl;
+}

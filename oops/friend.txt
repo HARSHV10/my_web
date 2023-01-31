@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+class B;
+class A
+{
+    int a;
+    public:
+    A(int c)
+    {
+        a=c;
+    }
+    void friend larger(A a1 , B b2);
+};
+
+class B
+{
+    int b;
+    public:
+    B(int d)
+    {
+        b=d;
+    }
+    void friend larger(A a1, B b2);
+};
+
+void  larger(A a1, B b1)
+{
+    if (a1.a<b1.b)
+    {
+        cout<<"The larger element is:"<< b1.b;
+    }
+    else if (a1.a==b1.b)
+    {
+        cout<<"both are equal";
+    }
+    else
+    {
+        cout<<"The larger element is:"<< a1.a;
+    }  
+}
+
+int main()
+{
+    int p,q;
+    cout<<"Enter a number:";
+    cin>>p;
+    cout<<"Enter a number:";
+    cin>>q;
+    A e1(p);
+    B e2(q);
+    larger(e1,e2);
+    return 0;
+}

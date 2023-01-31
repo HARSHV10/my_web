@@ -1,0 +1,14 @@
+#include<iostream>
+using namespace std;
+
+template<typename A>
+A sqr(A num){
+    return(num*num);
+}
+
+int main()
+{
+    cout<<"\nSquare of integer number 2:"<<sqr<int>(2);
+    cout<<"\nSquare of decimal number 2.2:"<<sqr<double>(2.2);
+    return 0; 
+}
