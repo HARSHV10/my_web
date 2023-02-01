@@ -61,13 +61,13 @@ const data=[
     sem:"3rd"
    },
    {
-    url:"ds/sparse.c",
+    url:"ds/saprse.c",
     title:"spar",
     sem:"3rd"
    },
    {
     url:"ds/stack.c",
-    title:"virt",
+    title:"stack",
     sem:"3rd"
    },
 ]
