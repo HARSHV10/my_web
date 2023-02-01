@@ -50,6 +50,26 @@ const data=[
     title:"virt",
     sem:"3rd"
    },
+   {
+    url:"ds/queue.c",
+    title:"queue",
+    sem:"3rd"
+   },
+   {
+    url:"ds/ll.c",
+    title:"ll",
+    sem:"3rd"
+   },
+   {
+    url:"ds/sparse.c",
+    title:"spar",
+    sem:"3rd"
+   },
+   {
+    url:"ds/stack.c",
+    title:"virt",
+    sem:"3rd"
+   },
 ]
 {
 
